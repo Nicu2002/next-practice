@@ -1,0 +1,54 @@
+
+
+.weatherCard {
+    width: 40vmin;
+    height: 50vmin;
+    background-color: #C4D7E0;
+    border-radius: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: 10;
+}
+
+.weatherCard h1 {
+    padding-top: 30px;
+    font-size: 3vmin;
+}
+
+.mainWeather {
+    display: flex;
+    width: max-content;
+}
+
+.mainWeather img {
+    width: 150px;
+    height: 150px;
+}
+
+.mainWeather p {
+    font-size: 5vmin;
+}
+
+.info {
+    width: 100%;
+}
+
+.info p img {
+    width: 4vmin;
+    margin-right: 2vmin;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    font-size: 2vmin;
+    font-weight: 700;
+    width: max-content;
+    margin-left: 20%;
+    padding-top: 1vmin;
+}
+

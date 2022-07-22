@@ -1,0 +1,28 @@
+
+button {
+    position: absolute;
+    z-index: 20;
+}
+
+#app {
+    height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.auth-btn {
+    margin-left: 50px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #377D71;
+    cursor: pointer;
+}
+
+.danger {
+    background-color: red;
+}

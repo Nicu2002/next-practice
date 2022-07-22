@@ -1,0 +1,27 @@
+
+#navBar {
+    width: 60vw;
+    background-color: #F8F9D7;
+    border-radius: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: 10;
+}
+
+#navBar li{
+    list-style: none;
+}
+
+#navBar li a{
+    font-size: 2.5vmin;
+    text-decoration: none;
+    color: black;
+}
+#navBar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+}
