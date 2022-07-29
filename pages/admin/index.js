@@ -1,13 +1,21 @@
-import {PublicRouteLayout} from '../../components/PublicRouteLayout/PublicRouteLayout';
-import WeatherCard from '../../components/WeatherCard/WeatherCard';
+import {useSelector} from 'react-redux';
+import Head from 'next/head';
 import AdminPanel from '../../components/AdminPanel/AdminPanel';
+import {PrivateRoute} from '../../components/PrivateRoute/PrivateRoute';
+import {AccesRestricted} from '../../components/AccesRestricted/AccesRestricted';
+
 
 
 export default function Admin() {
-
+    const {permision} = useSelector(state => state.auth);
     return(
-        <PublicRouteLayout>
-            <AdminPanel/>
-        </PublicRouteLayout>
+        <>
+            <Head>
+                <title>Admin</title>
+            </Head>
+            <PrivateRoute permision={permision} restriction={<AccesRestricted/>} >
+                <AdminPanel/>
+            </PrivateRoute>
+        </>
     )
 }

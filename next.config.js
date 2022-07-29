@@ -1,22 +1,25 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+// const nextConfig = {
+//   reactStrictMode: true,
+//   swcMinify: true,
+//   images: {
+//     domains: ['openweathermap.org']
+//   }
+// }
+
+// module.exports = nextConfig
+
+
+const withPWA = require('next-pwa');
+
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    swSrc: 'service-worker.js'
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ['openweathermap.org']
   }
-  // experimental: {
-  //   images: {
-  //     domains:["openweathermap.org"],
-  //     remotePatterns: [
-  //       {
-  //         protocol: 'https',
-  //         hostname: 'openweathermap.org',
-  //         pathname: '/img/wn/*@2x.png',
-  //       },
-  //     ],
-  //   },
-  // }
-}
-
-module.exports = nextConfig
+});

@@ -5,7 +5,7 @@ import {HomeOutlined} from '@ant-design/icons'
 import 'antd/dist/antd.css';
 
 
-const AdminPanel = (props) => {
+const AdminPanel = () => {
     const router = useRouter();
     const initialUsers = [
         'No name',

@@ -1,0 +1,17 @@
+{
+    "name": "Meteo",
+    "short_name": "Meteo",
+    "display": "standalone",
+    "orientation": "portrait",
+    "purpose": "any maskable",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/sun.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+  }

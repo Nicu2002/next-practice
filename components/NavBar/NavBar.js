@@ -9,7 +9,7 @@ const NavBar = ()=>{
         <nav id="navBar">
             <ul>
                 <li>
-                    <Link href="/" style={({ isActive }) => isActive ? activeStyle : undefined}>Chisinau</Link>
+                    <Link href="/chisinau" style={({ isActive }) => isActive ? activeStyle : undefined}>Chisinau</Link>
                 </li>
                 <li>
                     <Link href="/balti" style={({ isActive }) => isActive ? activeStyle : undefined}>Balti</Link>
@@ -22,6 +22,9 @@ const NavBar = ()=>{
                 </li>
                 <li>
                     <Link href="/tiraspol" style={({ isActive }) => isActive ? activeStyle : undefined}>Tiraspol</Link>
+                </li>
+                <li>
+                    <Link href="/admin" style={({ isActive }) => isActive ? activeStyle : undefined}>Admin</Link>
                 </li>
             </ul>
         </nav>
